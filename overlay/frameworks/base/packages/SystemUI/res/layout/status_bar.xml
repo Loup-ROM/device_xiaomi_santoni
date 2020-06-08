@@ -91,7 +91,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal" >
 
-                    <com.android.systemui.havoc.carrierlabel.CarrierLabel
+		<!--                    <com.android.systemui.havoc.carrierlabel.CarrierLabel
                         android:id="@+id/statusbar_carrier_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -101,16 +101,16 @@
                         android:paddingEnd="3dp"
                         android:textAppearance="@style/TextAppearance.StatusBar.Clock"
                         android:visibility="gone"
-                        android:singleLine="true"/>
+		android:singleLine="true"/> -->
 
-                    <com.android.systemui.havoc.logo.LogoImageView
+		<!--                    <com.android.systemui.havoc.logo.LogoImageView
                         android:id="@+id/havoc_logo"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:paddingStart="3dp"
                         android:paddingEnd="3dp"
                         android:scaleType="center"
-                        android:visibility="gone" />
+		android:visibility="gone" />-->
                 </com.android.keyguard.AlphaOptimizedLinearLayout>
 
                 <com.android.systemui.statusbar.AlphaOptimizedFrameLayout
