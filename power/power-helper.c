@@ -239,12 +239,13 @@ void power_hint(power_hint_t hint, int data)
         break;
         case POWER_HINT_VIDEO_DECODE:
             process_video_decode_hint(data);
-        break;
-        case POWER_HINT_SET_PROFILE:
-            ALOGI("set profile power hint not handled in power_hint_override");
-        break;
+        break;        
         default:
         break;
+        
+        if(hint == POWER_HINT_SET_PROFILE){
+           ALOGI("set profile power hint not handled in power_hint_override");
+        }
     }
 }
 
