@@ -518,6 +518,6 @@ PRODUCT_PACKAGES += \
     libnl
 
 #XiaomiParts
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     XiaomiParts \
     XiaomiAddon
