@@ -517,11 +517,6 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-#XiaomiParts
-#PRODUCT_PACKAGES += \
-    XiaomiParts \
-    XiaomiAddon
-
 # Privapp permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-lineage.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lineage.xml
