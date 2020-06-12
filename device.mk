@@ -524,3 +524,6 @@ PRODUCT_PACKAGES += \
 # Privapp permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-lineage.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lineage.xml
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 720
