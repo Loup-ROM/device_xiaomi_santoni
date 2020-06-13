@@ -270,5 +270,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Hardware Keys
 TARGET_USES_HARDWARE_KEYS := true
 
+# Power HAL
+TARGET_USES_NON_LEGACY_POWERHAL := true
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/santoni/BoardConfigVendor.mk
