@@ -1,2 +1,1 @@
-allow shell kernel:system syslog_read;
-allow shell vendor_toolbox_exec:file { execute getattr };
+allow shell vendor_toolbox_exec:file { getattr };
