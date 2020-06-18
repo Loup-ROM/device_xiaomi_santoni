@@ -4,3 +4,9 @@ get_prop(untrusted_app_27, persist_camera_prop)
 dontaudit untrusted_app_27 proc_vmstat:file { getattr open };
 allow untrusted_app_27 device:chr_file { ioctl };
 allow untrusted_app_27 device:chr_file { ioctl };
+
+allow untrusted_app_27 dalvikcache_data_file:file execmod;
+allow untrusted_app_27 proc:file read;
+allow untrusted_app_27 proc_qtaguid_stat:file read;
+allow untrusted_app_27 proc_zoneinfo:file read;
+
