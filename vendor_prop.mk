@@ -186,6 +186,11 @@ vendor.iop.enable_prefetch_ofr=1 \
 vendor.perf.iop_v3.enable=1 \
 persist.vendor.qti.games.gt.prof=1
 
+# ParanoidDoze
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sensor.proximity=true \
+ro.sensor.pocket=xiaomi.sensor.pocket
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.boot-dex2oat-threads=8 \
