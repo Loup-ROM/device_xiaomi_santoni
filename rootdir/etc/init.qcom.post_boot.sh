@@ -2517,6 +2517,8 @@ case "$target" in
                 echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
                 echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
                 echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
+		echo "0 1 1 1" > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
+		echo 80 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
 
                 # re-enable thermal core_control
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
