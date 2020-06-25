@@ -3,3 +3,4 @@ allow netmgrd netutils_wrapper:process noatsecure;
 allow netmgrd kernel:system module_request;
 allow netmgrd diag_device:chr_file { read write };
 allow netmgrd diag_device:chr_file open;
+allow netmgrd diag_device:chr_file ioctl;

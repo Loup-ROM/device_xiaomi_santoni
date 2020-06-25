@@ -7,4 +7,6 @@ allow untrusted_app_27 device:chr_file { ioctl };
 
 allow untrusted_app_27 proc_qtaguid_stat:file read;
 allow untrusted_app_27 proc_zoneinfo:file read;
+allow untrusted_app_27 proc_qtaguid_stat:file open;
+allow untrusted_app_27 proc_zoneinfo:file open;
 

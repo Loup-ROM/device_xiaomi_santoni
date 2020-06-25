@@ -1,1 +1,3 @@
 allow drmserver vendor_audio_prop:file read;
+allow drmserver vendor_audio_prop:file open;
+allow drmserver vendor_audio_prop:file getattr;

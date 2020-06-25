@@ -1,1 +1,3 @@
 allow mediametrics vendor_audio_prop:file read;
+allow mediametrics vendor_audio_prop:file open;
+allow mediametrics vendor_audio_prop:file getattr;

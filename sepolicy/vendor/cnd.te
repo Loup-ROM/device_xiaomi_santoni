@@ -1,3 +1,4 @@
 get_prop(cnd, wifi_prop)
 allow cnd diag_device:chr_file { read write };
 allow cnd diag_device:chr_file open;
+allow cnd diag_device:chr_file ioctl;

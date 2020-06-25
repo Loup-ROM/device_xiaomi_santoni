@@ -4,3 +4,6 @@ get_prop(untrusted_app, bg_daemon_prop)
 get_prop(untrusted_app, bg_boot_complete_prop)
 get_prop(untrusted_app, persist_camera_prop)
 allow untrusted_app proc_vmstat:file { getattr };
+allow untrusted_app proc_qtaguid_stat:file read;
+allow untrusted_app proc_zoneinfo:file read;
+allow untrusted_app rootfs:dir read;

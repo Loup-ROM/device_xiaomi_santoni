@@ -28,6 +28,8 @@ allow hal_fingerprint_default sdcardfs:dir search;
 allow hal_fingerprint_default storage_file:dir search;
 allow hal_fingerprint_default storage_file:lnk_file read;
 allow hal_fingerprint_default vendor_audio_prop:file read;
+allow hal_fingerprint_default vendor_audio_prop:file open;
+allow hal_fingerprint_default vendor_audio_prop:file getattr;
 
 
 set_prop(hal_fingerprint_default, system_prop)

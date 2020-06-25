@@ -1,3 +1,4 @@
 allow sensors persist_file:dir r_dir_perms;
 allow sensors diag_device:chr_file { read write };
 allow sensors diag_device:chr_file open;
+allow sensors diag_device:chr_file ioctl;
