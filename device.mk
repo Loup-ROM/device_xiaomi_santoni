@@ -496,8 +496,7 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     wificond \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    wcnss_service
+    wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
