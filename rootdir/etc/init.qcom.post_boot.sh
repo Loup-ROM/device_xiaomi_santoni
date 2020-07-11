@@ -2519,7 +2519,10 @@ case "$target" in
                 echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster
 		echo "0 1 1 1" > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
 		echo 80 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
-
+		
+		# Set minimum GPU power level (216)
+		echo 5 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+		
                 # re-enable thermal core_control
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
 
