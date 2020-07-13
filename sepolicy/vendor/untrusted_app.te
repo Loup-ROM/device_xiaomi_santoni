@@ -7,3 +7,6 @@ allow untrusted_app proc_vmstat:file { getattr };
 allow untrusted_app proc_qtaguid_stat:file read;
 allow untrusted_app proc_zoneinfo:file read;
 allow untrusted_app rootfs:dir read;
+allow untrusted_app rootfs:dir open;
+allow untrusted_app sysfs_kgsl:dir search;
+allow untrusted_app sysfs_kgsl:dir search;

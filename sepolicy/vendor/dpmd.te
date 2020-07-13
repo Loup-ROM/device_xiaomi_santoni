@@ -1,3 +1,4 @@
 allow dpmd diag_device:chr_file { read write };
 allow dpmd diag_device:chr_file open;
 allow dpmd diag_device:chr_file ioctl;
+allow dpmd ctl_stop_prop:property_service set;

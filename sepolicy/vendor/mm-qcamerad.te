@@ -13,3 +13,4 @@ allow mm-qcamerad property_socket:sock_file write;
 allow mm-qcamerad vendor_audio_prop:file read;
 allow mm-qcamerad vendor_audio_prop:file open;
 allow mm-qcamerad vendor_audio_prop:file getattr;
+allow mm-qcamerad sysfs_kgsl:dir search;

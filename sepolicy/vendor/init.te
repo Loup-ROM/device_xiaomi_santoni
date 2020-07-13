@@ -57,3 +57,8 @@ allow init firmware_file:filesystem getattr;
 allow init system_file:file mounton;
 
 #allow init shell_exec:file execute_no_trans;
+
+allow init self:socket read;
+allow init sysfs_battery_supply:file open;
+allow init sysfs_mpdecision:file { open read write };
+allow init thermal_device:chr_file ioctl;
