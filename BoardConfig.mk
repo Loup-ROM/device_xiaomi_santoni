@@ -273,5 +273,9 @@ TARGET_USES_HARDWARE_KEYS := true
 # Power HAL
 TARGET_USES_NON_LEGACY_POWERHAL := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+	/vendor/lib/libmmcamera_ppeiscore.so|libshim_mmcamera_ppeiscore.so
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/santoni/BoardConfigVendor.mk

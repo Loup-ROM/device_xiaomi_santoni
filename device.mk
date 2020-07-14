@@ -160,6 +160,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8937 \
+    libshim_mmcamera_ppeiscore \
     Snap
 
 PRODUCT_PACKAGES += \
