@@ -2522,6 +2522,10 @@ case "$target" in
 		
 		# Set minimum GPU power level (216)
 		echo 5 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+
+		# Chill KSM a bit
+		echo 1 > /sys/kernel/mm/ksm/deferred_timer
+		echo 4000 > /sys/kernel/mm/ksm/sleep_millisecs
 		
                 # re-enable thermal core_control
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
