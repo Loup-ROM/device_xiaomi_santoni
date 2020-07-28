@@ -517,3 +517,9 @@ PRODUCT_COPY_FILES += \
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 720
+
+# Opt out for GAPPS
+ifneq ($(NO_GAPPS),)
+  TARGET_DISABLES_GAPPS := true
+endif
+
